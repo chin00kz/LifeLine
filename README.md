@@ -53,7 +53,7 @@ This project is for educational purposes only and is not licensed for public or 
 
 - [Romesh Gamadikari](https://github.com/RomeshCG)
 - [Prasad Wijesinghe](https://github.com/PrasadWijesinghe) 
-- [Chanuka Weerawardhana](https://github.com/chanuuka)
+- [Chanuka](https://github.com/chanuuka)
 - [Suneth Herath](https://github.com/Suneth2220)
 - [Ransarani](https://github.com/ChCh200)
   
