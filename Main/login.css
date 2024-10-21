@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-image: url("bgForn.jpg");
+  }
+  
+  .wrapper {
+    width: 330px;
+    padding: 2rem;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+
+  .logol {
+    width: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.2rem;
+  }
+  
+  form input {
+    width: 92%;
+    outline: none;
+    border: 1px solid #e4e4e4;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
+  }
+  
+  .btt {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(2, 173, 253);
+  }
+  
+  .btt:hover {
+    background: rgba(17, 107, 143, 0.8);
+  }
+  
+  input:focus {
+    border: 1px solid rgb(192, 192, 192);
+  }
+  
+  .member {
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color: #636363;
+  }
+  
+  .member a {
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+  }
+  
+  

@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  margin: 30px auto; 
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.5rem; 
+  color: black; 
+  margin-bottom: 1rem;
+}
+
+form .section {
+  margin-bottom: 15px; 
+}
+
+form .horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+form input,
+form select,
+form label {
+  width: 100%; 
+  outline: none;
+  border: 1px solid #fff;
+  padding: 8px 12px; 
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background: #f2f2f2;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+form select {
+  margin: 0 auto; 
+}
+
+.tos-label {
+  font-size: 0.7rem; 
+  margin-left: 5px;
+}
+
+.btt {
+  font-size: 1rem;
+  padding: 8px 0;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  width: 100%; 
+  color: #fff;
+  cursor: pointer;
+  background: rgb(2, 173, 253);
+}
+
+.btt:hover {
+  background: rgba(2, 173, 253, 0.8);
+}
+
+input:focus {
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.member {
+  font-size: 0.7rem; 
+  margin-top: 1rem;
+  color: #636363;
+}
+
+.member a {
+  color: rgb(2, 173, 253);
+  text-decoration: none;
+}
+
+.dob-container {
+  margin-bottom: 15px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+/* Media Queries for mobile */
+@media screen and (max-width: 460px) {
+  .wrapper {
+    width: 90%; 
+    max-width: none;
+    padding: 16px; 
+  }
+
+  h2 {
+    font-size: 20px; 
+  }
+
+  form input,
+  form select,
+  form label {
+    width: calc(100% - 40px);
+    padding: 10px 15px; 
+  }
+
+  .btt {
+    width: calc(100% - 40px);
+    padding: 8px 0; 
+    font-size: 16px; 
+  }
+
+  .member {
+    font-size: 14px; 
+    margin-top: 16px; 
+  }
+}
+
