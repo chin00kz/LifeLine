@@ -1,0 +1,160 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.entirebox {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Main contact box */
+.cubox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.cubox1 {
+    flex: 0 0 60%;
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a76d1;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.map-div {
+    flex: 0 0 40%;
+    height: 400px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.map-div iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Contact details section */
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.contact-box {
+    text-align: center;
+}
+
+.contact-box i {
+    font-size: 24px;
+    color: #1a76d1;
+    margin-bottom: 10px;
+}
+
+.contact-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-box p {
+    color: #666;
+}
+
+/*hero section*/
+.a-h1{
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .a-hero {
+    background-image: url("../images/contact\ us.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 200px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;  /* Add position relative for absolute positioning */
+  }
+  
+  .a-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure overlay is behind text */
+  }
+  
+  .a-hero-content {
+    color: #ffffff; /* Set text color to white */
+    position: relative; /* Ensure text is above overlay */
+    z-index: 2; /* Ensure text is above overlay */
+  }
+  

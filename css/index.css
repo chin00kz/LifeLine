@@ -1,0 +1,30 @@
+/* Styles for the hero image container */
+.hero-container {
+    position: relative;
+    text-align: center;
+}
+
+/* Styles for the hero image */
+.hero-image {
+    width: 100%; /* Ensure the image fills the container */
+}
+
+/* Styles for the text overlay */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(19, 17, 17);
+}
+
+/* Styles for the heading */
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Styles for the paragraph */
+.hero-text p {
+    font-size: 1.2em;
+}

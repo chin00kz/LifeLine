@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+ body {
+    background: url("../images/bg.jpg") no-repeat center center; /* Set default background properties */
+    background-size: cover;
+  }
+  
+  @media screen and (max-width: 460px) {
+    body {
+      background-size: contain; /* Adjust background size for mobile devices */
+    }
+  }
+  
+  .wrapper {
+    width: 90%;
+    max-width: 400px;
+    padding: 0 1rem 1rem;
+    margin: 30px auto; /* Reduced margin for better centering */
+    background-color: rgba(255, 255, 255, 0.8); /* Added a slight transparency for better readability */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Reduced font size for mobile view */
+    color: black; 
+    margin-bottom: 1rem;
+    padding-top: 20px;
+  }
+  
+  form .section {
+    margin-bottom: 15px; /* Reduced margin for better spacing */
+  }
+  
+  form .horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  form input,
+  form select,
+  form label {
+    width: 100%; /* Changed width to 100% for better mobile view */
+    outline: none;
+    border: 1px solid #fff;
+    padding: 8px 12px; /* Reduced padding for mobile view */
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
+  }
+  
+  form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  form select {
+    margin: 0 auto; 
+  }
+  
+  .tos-label {
+    font-size: 0.7rem; /* Reduced font size for mobile view */
+    margin-left: 5px;
+  }
+  
+  .btt {
+    font-size: 1rem;
+    padding: 8px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 100%; /* Changed width to 100% for better mobile view */
+    color: #fff;
+    cursor: pointer;
+    background: rgb(2, 173, 253);
+  }
+  
+  button:hover {
+    background: rgba(17, 107, 143, 0.8);
+  }
+  
+  input:focus {
+    border: 1px solid rgb(192, 192, 192);
+  }
+  
+  .member {
+    font-size: 0.7rem; /* Reduced font size for mobile view */
+    margin-top: 1rem;
+    color: #636363;
+  }
+  
+  .member a {
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+  }
+  
+  /* Media Queries for mobile */
+  @media screen and (max-width: 460px) {
+    .wrapper {
+      width: 90%; /* Adjust width as needed */
+      max-width: none;
+      padding: 16px; /* Converted from 1rem */
+    }
+  
+    h2 {
+      font-size: 20px; /* Adjust font size for headings */
+    }
+  
+    form input,
+    form select,
+    form label {
+      width: calc(100% - 40px);
+      padding: 10px 15px; /* Reduce padding for better touch interaction */
+    }
+  
+    .btt {
+      width: calc(100% - 40px);
+      padding: 8px 0; /* Reduce padding for button */
+      font-size: 16px; /* Adjust font size for button */
+    }
+  
+    .member {
+      font-size: 14px; /* Adjust font size for text */
+      margin-top: 16px; /* Adjust margin */
+    }
+  }
+  
+  /* Media Queries for tablet */
+  @media screen and (min-width: 481px) and (max-width: 1024px) {
+    .wrapper {
+      margin: 50px auto;
+    }
+  
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Media Queries for desktop */
+  @media screen and (min-width: 1025px) {
+    .wrapper {
+      width: 50%;
+      margin: 100px auto;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

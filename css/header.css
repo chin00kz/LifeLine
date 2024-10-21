@@ -1,0 +1,181 @@
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 2px 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding for smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Logo Styles */
+.head-logo {
+    float: left;
+    margin-top: 5px;
+}
+
+.head-logo img {
+    max-width: 100px; /* Decrease maximum width for smaller screens */
+    height: auto;
+}
+
+/* Navigation Styles */
+.navigation {
+    float: left;
+    font-size: 110%;
+    font-weight: bold;
+    
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 10px; /* Decrease margin for smaller screens */
+}
+
+.navigation ul li:last-child {
+    margin-right: 0;
+}
+
+.navigation ul li a {
+    color: #0f0f0f;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Add transition for color and border-bottom-color */
+    position: relative; /* Add position relative to position the pseudo-element */
+}
+
+.navigation ul li a:hover {
+    color: #1A76D1; /* Change text color to blue on hover */
+    border-bottom: 2px solid #1A76D1; /* Add bottom border on hover */
+}
+
+.navigation ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Height of the underline */
+    background-color: transparent; /* Set initial background color */
+    transition: background-color 0.3s ease; /* Add transition for background-color */
+}
+
+.navigation ul li a:hover::after {
+    background-color: #1A76D1; /* Change background color on hover */
+}
+
+
+.navigation ul li.active a {
+    color: #1A76D1; /* Change color for active link */
+    font-weight: bold; /* Bold text for active link */
+    /* Add any additional styles to indicate the active state */
+}
+
+
+/* Header Buttons */
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1A76D1;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 ; /* Adjust padding for smaller screens */
+    }
+
+    .navigation {
+        display: none; /* Hide navigation by default on smaller screens */
+        width: 100%; /* Make navigation full-width */
+        margin-top: 20px;
+    }
+
+    .navigation.active {
+        display: block; /* Show navigation when active class is applied */
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation ul li {
+        margin: 10px 0;
+    }
+
+    .header-buttons {
+        display: flex;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    
+    .head-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:100px;
+    }
+}

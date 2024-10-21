@@ -1,0 +1,87 @@
+body {
+    font-family: "font-family-name", sans-serif;
+  }
+
+.aboutus-container {
+    display: flex;
+    flex-direction: column;
+    background-color: f4f4f4;
+    padding: 20px;
+
+}
+
+.text-box {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.text-box h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 15px;
+    color: gray;
+    line-height: 1.5;
+}
+
+.icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .icon-wrapper {
+        margin-bottom: 10px;
+    }
+}
+
+.icon-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.icon-circle {
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: 1px solid #dedddd;
+}
+
+.icon-circle:hover {
+    transform: translateY(-3px);
+    background-color: #007bff;
+}
+
+.icon-circle:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.icon-circle img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 5px;
+}
+
+.icon-wrapper p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+

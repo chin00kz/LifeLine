@@ -1,0 +1,114 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*hero section*/
+  .a-h1{
+    font-size: 50px;
+  }
+
+  .a-hero {
+    background-image: url("../images/aboutus.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 200px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;  /* Add position relative for absolute positioning */
+  }
+  
+  .a-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure overlay is behind text */
+  }
+  
+  .a-hero-content {
+    color: #fff; /* Set text color to white */
+    position: relative; /* Ensure text is above overlay */
+    z-index: 2; /* Ensure text is above overlay */
+  }
+  
+  /*our story section*/
+ .a-story-section {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Set background color */
+}
+
+.a-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.a-story-content {
+    padding: 20px;
+    text-align: center; /* Center align text */
+    border: 1px solid #ccc; /* Add border for visualization */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add glow effect */
+}
+
+.a-section-title {
+    font-size: 24px; /* Set font size for headings */
+    margin-bottom: 10px; /* Add some bottom margin */
+    color: #333; /* Set text color */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add text glow effect */
+}
+
+.a-section-description {
+    font-size: 16px; /* Set font size for paragraphs */
+    line-height: 1.6; /* Set line height for readability */
+    color: #666; /* Set text color */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add text glow effect */
+}
+
+/*vison and mission section*/
+.vision-mission-section {
+  padding: 50px 0 50px;
+  background-color: #f9f9f9; /* Set background color */
+}
+
+.v-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Align items with space between */
+  align-items: center; /* Center items vertically */
+}
+
+.vision-mission {
+  flex-basis: calc(50% - 20px); /* Set width of each section */
+  padding: 20px;
+  text-align: center; /* Center align text */
+  border: 1px solid #ccc; /* Add border for visualization */
+  border-radius: 10px; /* Add border radius */
+  height: 250px; /* Set fixed height */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Set flex direction to column */
+  justify-content: center; /* Vertically center content */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add glow effect */
+}
+
+.vision-mission h2 {
+  font-size: 24px; /* Set font size for headings */
+  margin-bottom: 10px; /* Add some bottom margin */
+  color: #333; /* Set text color */
+}
+
+.vision-mission p {
+  font-size: 16px; /* Set font size for paragraphs */
+  line-height: 1.6; /* Set line height for readability */
+  color: #666; /* Set text color */
+}
+
+

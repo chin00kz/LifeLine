@@ -1,0 +1,86 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.serv-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+  }
+
+.boxen{
+    padding: 30px;
+}
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .service {
+    flex-basis: calc(50% - 20px); /* Adjusted to account for margin and space between services */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+  
+  .s-icon {
+    text-align: center;
+  }
+  
+  .s-icon img {
+    width: 80px;
+  }
+  
+  .s-title {
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .pp {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+/*hero section*/
+  .a-h1{
+    font-size: 50px;
+  }
+
+  .a-hero {
+    background-image: url("../images/services.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 200px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;  /* Add position relative for absolute positioning */
+  }
+  
+  .a-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure overlay is behind text */
+  }
+  
+  .a-hero-content {
+    color: #fff; /* Set text color to white */
+    position: relative; /* Ensure text is above overlay */
+    z-index: 2; /* Ensure text is above overlay */
+  }
+  

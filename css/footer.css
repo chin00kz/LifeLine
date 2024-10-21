@@ -1,0 +1,150 @@
+.footer {
+    background-color: #041434;
+    padding: 50px 0;
+    
+  }
+  
+  .foot-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-left {
+    width: 50%;
+  }
+  
+  .footer-left h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-left input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .footer-left button {
+    background-color: #1a76d1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .footer-left p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .footer-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+    margin-left:50px;
+    padding-left: 70px;
+    
+  }
+  
+  .footer-col {
+    width: 25%;
+    margin-left: 20px;
+    color: #30bfde;
+  }
+  
+ 
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #1a76d1;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    background-color: #041434;
+    padding-bottom: 20px;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ddd;
+  }
+  
+  .footer-bottom a {
+    color: #1a76d1;
+    text-decoration: none;
+  }
+  
+
+  .footer-left img.footer-logo {
+    margin-right: 20px; /* Adjust spacing as needed */
+    max-width: 150px; /* Adjust width as needed */
+  }
+  
+  .footer-left {
+    width: 50%;
+    display: flex; /* Added to allow image and text side-by-side */
+    align-items: center; /* Maintains vertical alignment */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .footer-top {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .footer-left {
+        display: none; /* Hide the subscribe form */
+    }
+
+    .footer-left img.footer-logo {
+        margin: 0 auto; /* Center the image */
+        display: block; /* Ensure the image takes full width */
+    }
+
+    .footer-right {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-left: 0;
+        text-align: center; /* Center text */
+    }
+}
+  

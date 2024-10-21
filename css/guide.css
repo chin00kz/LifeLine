@@ -1,0 +1,65 @@
+.consultation-section {
+    
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #4D869C;
+   
+  }
+  
+  .consultation-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .guide-text {
+    flex: 1;
+  }
+  
+  .guide-image {
+    flex: 1;
+    text-align: right;
+  }
+
+  .guide-image img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    max-width: 400px; /* Set a maximum width for the image */
+    border-radius: 10px; /* Add rounded corners to the image */
+  }
+  
+  .consultation-heading {
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: aliceblue;
+  }
+  
+  .consultation-steps {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .step-number {
+    background-color: #007bff;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .step-description {
+    text-align: left;
+    font-size: 1.5em;
+    color: aliceblue;
+  }
+  

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Set page background color */
+  }
+  
+  .book-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    background-color: #4D869C; /* Set box background color */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quote {
+    width: 55%;
+  }
+  
+  .quote p {
+    
+    color: #f8f8f8; /* Blue text color */
+    font-size: 18px;
+  }
+  .top {
+    margin: 10px 0;
+    color: #4D869C; /* Blue text color */
+    font-size: 18px;
+  }
+  
+  .appointment-button {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .appointment-button a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .appointment-button a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
