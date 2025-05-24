@@ -1,61 +1,91 @@
-**Lifeline Medical Portal**
+# Lifeline Medical Portal
 
-Welcome to Lifeline Medical Portal, a comprehensive platform designed to streamline healthcare services for patients, doctors, and administrators. Lifeline offers a range of features to facilitate patient care, appointment management, feedback submission, and user administration. Below, you'll find an overview of the functionalities and how to get started with Lifeline.
+**Lifeline Medical Portal** is a comprehensive web-based platform designed to streamline healthcare services for patients, doctors, and administrators. It offers a robust set of features for appointment scheduling, user management, feedback collection, and prescription handling — all built to enhance the efficiency of healthcare delivery.
 
-**Features:**
+## 🚀 Features
 
-1. **User Registration:**
-   - Patients can register on the Lifeline portal to access various services.
-   - Administrators can add doctors to the platform.
-   - Administrators have access to user management functionalities.
+### 👥 User Registration & Management
 
-2. **Appointment Management:**
-   - Patients can schedule appointments with doctors through the portal.
-   - Doctors can view and manage appointment requests, and reply appointments.
-   - Appointment history and details are securely stored for easy access.
-   - Doctors can issue prescriptions.
+* **Patients** can register to book appointments and access healthcare services.
+* **Administrators** can add and manage doctor accounts.
+* User roles (Patient, Doctor, Admin) are managed with appropriate access levels.
 
-3. **Feedback Submission:**
-   - Guests can submit feedback about their experience with Lifeline services.
-   - Feedback is collected and managed by the Lifeline administrator for review and action.
+### 📅 Appointment System
 
-4. **User Administration:**
-   - Administrators have access to user management functionalities, including adding, editing, or deleting user accounts.
-   - User roles and permissions can be managed to ensure proper access control.
+* Patients can book appointments with doctors through the portal.
+* Doctors can:
 
-**Getting Started:**
+  * View and respond to appointment requests
+  * Issue prescriptions
+  * View appointment history
+* Appointment data is securely stored for both users and medical staff.
 
-1. **Installation:**
-   - Clone the Lifeline repository to your local machine.
-   - Set up a local development environment with PHP, MySQL, and a web server (e.g., xampp).
-   - Import the provided SQL database schema to set up the required database tables.
+### 💬 Feedback System
 
-2. **Configuration:**
-   - Update the database configuration settings in the PHP files to connect Lifeline to your MySQL database.
+* Guests can submit feedback about their experience.
+* Administrators can review, manage, and take action on submitted feedback.
 
-3. **Usage:**
-   - Navigate to the Lifeline portal using your web browser (localhost/web/lifeline).
-   - Register as a patient to access the respective functionalities.
-   - Patients can schedule appointments, view appointment history, and submit feedback.
-   - Doctors can manage appointments, view patient details, and respond to appointment requests.
-   - Administrators can manage user accounts, review feedback, and perform administrative tasks.
-   - You can access doctor account using username and password provide database.
+### 🛠️ Admin Panel
 
-**Contributing:**
+* Full access to user account management
+* Ability to add, edit, or remove users
+* Feedback moderation and access control configuration
 
-We welcome contributions to enhance Lifeline Medical Portal. If you have ideas for new features, improvements, or bug fixes, please feel free to submit a pull request.
+## 🧑‍💻 Getting Started
 
-**License:**
+### ✅ Prerequisites
 
-This project is for educational purposes only and is not licensed for public or university projects. It is intended for learning and exploration purposes, and any unauthorized use is prohibited.
+* XAMPP (or any PHP/MySQL stack)
+* Web browser
 
-**Developers:**
+### 📥 Installation
 
-- [Romesh Gamadikari](https://github.com/RomeshCG)
-- [Prasad Wijesinghe](https://github.com/PrasadWijesinghe) 
-- [Chanuka](https://github.com/chanuuka)
-- [Suneth Herath](https://github.com/Suneth2220)
-- [Ransarani](https://github.com/ChCh200)
-  
+1. Clone the repository:
 
-Thank you for choosing Lifeline Medical Portal. We hope it serves as a valuable tool in improving healthcare services for all users. If you have any questions or need assistance, please don't hesitate to contact us.
+   ```
+   git clone https://github.com/your-username/lifeline-portal.git
+   ```
+
+2. Import the provided `.sql` file into MySQL (e.g., via phpMyAdmin).
+
+3. Place the project folder inside `htdocs` if using XAMPP:
+
+   ```
+   C:/xampp/htdocs/lifeline
+   ```
+
+4. Configure database connection in the PHP files:
+
+   ```
+   $conn = mysqli_connect("localhost", "root", "", "lifeline_db");
+   ```
+
+### 🌐 Usage
+
+* Launch XAMPP and start **Apache** and **MySQL**.
+* In your browser, go to:
+
+  ```
+  http://localhost/lifeline
+  ```
+
+#### User Guide:
+
+* **Patients**: Register, book appointments, view history, and provide feedback.
+* **Doctors**: Log in to view and manage appointments and issue prescriptions.
+* **Admins**: Manage all users, view feedback, and maintain system functionality.
+
+## 👥 Developers
+
+* Chanuka ([https://github.com/chin00kz](https://github.com/chin00kz))
+* Romesh Gamadikari ([https://github.com/RomeshCG](https://github.com/RomeshCG))
+* Prasad Wijesinghe ([https://github.com/PrasadWijesinghe](https://github.com/PrasadWijesinghe))
+* Suneth Herath ([https://github.com/Suneth2220](https://github.com/Suneth2220))
+* Ransarani ([https://github.com/ChCh200](https://github.com/ChCh200))
+
+## 📜 License
+
+**Educational Use Only:**
+This project is intended strictly for educational and learning purposes. It is not licensed for commercial or university project submission use without explicit permission.
+
+---
